@@ -1,3 +1,4 @@
 # MajasDarbi
 Mazais GitHub Repo, kurš tika izveidots priekš mājas darba.
-Vēl viens mazais testins 
+Adding some extra lines
+Also, removed one.
