@@ -12,22 +12,22 @@ public class HomeworkThing {
 	void testCounter() {
 		System.out.println("Counting characters in string "
 			+ "\"Hello world\" (including space)... ");
-		HomeworkThing tVariable = new HomeworkThing();
-		assertTrue(tVariable.countCharacters("Hello world") == VARIABLE_Z);
+		HomeworkThing tVar = new HomeworkThing();
+		assertTrue(tVar.countCharacters("Hello world") == VARIABLE_Z);
 		System.out.println("Everything's alright?");
 	}
 	@Test
 	public void testMultiplication() {
 		System.out.println("Multiplication between 11 and 4." 
 			+ " Expected value is 44");
-		HomeworkThing tVariable = new HomeworkThing();
-		assertTrue(tVariable.multiply(VARIABLE_Z, VARIABLE_X) == RESULT_VARIABLE);
+		HomeworkThing tVar = new HomeworkThing();
+		assertTrue(tVar.multiply(VARIABLE_Z, VARIABLE_X) == RESULT_VARIABLE);
 		System.out.println("Everything's alright?");
 	}
-	public static int multiply(int x, int y) { //Multiplies two values
+	public static int multiply(int x, int y) {
 		return x * y;
 	}
-	public static int countCharacters(String word) { //Counts caracters in a given string
+	public static int countCharacters(String word) {
 		int count = 0;
 		for (int i = 0; i < word.length(); i++) {
 			count++;
@@ -39,7 +39,8 @@ public class HomeworkThing {
 		HomeworkThing lmaoMul = new HomeworkThing();
 		System.out.println("Multiplying 4 * 5 = "
 			+ lmaoMul.multiply(VARIABLE_X, VARIABLE_Y));
-		System.out.println("\nCounting characters in \"Homework is done\".\nResult = " 
-			+ lmaoMul.countCharacters("Homework is done") + " characters");
+		System.out.println("\nCounting characters in \"Homework is done\"."
+			+ "\nResult = " lmaoMul.countCharacters("Homework is done")
+			+ " characters");
 	}
 }
